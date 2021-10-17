@@ -1,4 +1,3 @@
-# require "json"
 class Hangman
 
 
@@ -29,7 +28,7 @@ class Hangman
   end
 
     def select_word
-    words = File.readlines("text.txt").select { |word| word.length}
+    words = File.readlines("capitals_europe.txt").select { |word| word.length}
     words[rand(words.length)].strip
   end
 
